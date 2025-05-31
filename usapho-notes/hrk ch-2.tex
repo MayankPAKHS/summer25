@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+
+\begin{document}
+
+\section*{HRK Chapter 2 Summary: Kinematics Basics}
+
+To really get physics, you gotta understand \textbf{acceleration}, \textbf{velocity}, and \textbf{displacement}.
+
+\begin{itemize}
+    \item \textbf{Acceleration} is the rate of change of velocity:
+    \[
+    a = \frac{\Delta v}{\Delta t}
+    \]
+    
+    \item \textbf{Velocity} is the rate of change of position:
+    \[
+    v = \frac{\Delta x}{\Delta t}
+    \]
+    
+    \item Position change is denoted as $\Delta x$.
+\end{itemize}
+
+\vspace{2mm}
+
+There are two main ways to find acceleration and velocity: \textit{average} and \textit{instantaneous}.
+
+\begin{itemize}
+    \item \textbf{Average acceleration}:
+    \[
+    a_{\text{avg}} = \frac{\Delta v}{\Delta t}
+    \]
+    
+    \item \textbf{Average velocity}:
+    \[
+    v_{\text{avg}} = \frac{\Delta x}{\Delta t}
+    \]
+\end{itemize}
+
+\vspace{2mm}
+
+To get instantaneous values, use calculus. Recall the definition of a derivative:
+\[
+f'(x) = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - f(x)}{\Delta x}
+\]
+
+The derivative gives the rate of change at a specific point — aka the \textit{instantaneous} rate.
+
+\begin{itemize}
+    \item \textbf{Instantaneous velocity} is the derivative of position $x(t)$ with respect to time $t$:
+    \[
+    v(t) = \frac{dx}{dt}
+    \]
+    
+    For example, $v(5) = x'(5) = \frac{d}{dt}x(t) \big|_{t=5}$
+    
+    \item Conversely, the integral of velocity over time gives position:
+    \[
+    x(t) = \int v(t) \, dt + x_0
+    \]
+\end{itemize}
+
+\vspace{2mm}
+
+\textbf{Note:} Speed is the absolute value of velocity,
+\[
+\text{speed} = \frac{\text{distance}}{\text{time}} = |v|
+\]
+Some questions may use speed instead of velocity.
+
+\vspace{4mm}
+
+\textbf{Common kinematics formulas:} (useful to memorize)
+\[
+v_f = v_0 + at
+\]
+\[
+x = x_0 + v_0 t + \frac{1}{2} a t^2
+\]
+\[
+v^2 = v_0^2 + 2a \Delta x
+\]
+\[
+v_x = v_0 x + a_x t
+\]
+
+\vspace{2mm}
+
+\textit{For free-fall problems:} acceleration is due to gravity, $a = -g$. If not specified, use $g = 9.8 \, m/s^2$ downward.
+
+\vspace{4mm}
+
+\colorbox{gray!20}{%
+\parbox{\linewidth}{%
+\textbf{Tip:} If acceleration is \textit{not constant}, you must use integrals or the average formulas:
+\[
+a_{\text{avg}} = \frac{\Delta v}{\Delta t}, \quad v_{\text{avg}} = \frac{\Delta x}{\Delta t}
+\]
+}}
+\end{document}
